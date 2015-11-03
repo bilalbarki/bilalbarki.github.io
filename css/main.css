@@ -78,14 +78,14 @@ header{
 	.flex-container{
 		flex-direction:column;
 		
-		width:100%;	
+			
 
 	}
 
 	.flex-container ul{
 		flex-direction:column;	
 		text-align:center;
-		width:100%;
+		
 		display:none;
 		
 	}
