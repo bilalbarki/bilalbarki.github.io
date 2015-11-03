@@ -30,7 +30,7 @@ header{
 .flex-container li{
 	padding:10px;
 	font-weight:700px;
-	font-size:15px ;
+	font-size:25px ;
 	/*border: 2px solid grey;*/
 }
 
@@ -98,6 +98,20 @@ header{
 
 		text-decoration: none;
 		color:white;
+	}
+	
+	.flex-container li{
+	padding:10px;
+	font-weight:700px;
+	font-size:50px ;
+	}
+	
+	h1{
+		font-size: 50px !important;
+	}
+	
+	.navbar{
+		font-size:50px;
 	}
 
 	/*class used by jquery to toggle nav ul*/
