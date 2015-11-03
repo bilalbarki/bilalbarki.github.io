@@ -3,8 +3,6 @@ nav{
 	border-bottom: 1px solid #e7e7e7;
 }
 
-
-
 header{
 	background:black;
 	font-family: 'lato', serif;
@@ -13,8 +11,8 @@ header{
 
 .flex-container{
 	background:black;
-	
-	
+	width:75%;
+	margin: 0 auto;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
@@ -30,7 +28,7 @@ header{
 .flex-container li{
 	padding:10px;
 	font-weight:700px;
-	font-size:25px ;
+	font-size:15px ;
 	/*border: 2px solid grey;*/
 }
 
@@ -58,9 +56,9 @@ header{
 .flex-container a{
 	text-decoration: none;
 }
-.flex-container h1{ 
+.flex-container h1#header-title a{ 
 	font-weight:300;
-	font-size: 40px;
+	font-size: 20px;
 	color: white;
 }
 
@@ -72,20 +70,18 @@ header{
 
 
 
-@media (max-width:1024px){
-	
-	
+@media (max-width:668px){
 	.flex-container{
 		flex-direction:column;
 		
-			
+		width:100%;	
 
 	}
 
 	.flex-container ul{
 		flex-direction:column;	
 		text-align:center;
-		
+		width:100%;
 		display:none;
 		
 	}
@@ -99,21 +95,6 @@ header{
 		text-decoration: none;
 		color:white;
 	}
-	
-	.flex-container li{
-	padding:10px;
-	font-weight:700px;
-	font-size:60px ;
-	}
-	
-	
-	
-	.navbar{
-		font-size:60px;
-	}
-	
-	
-	
 
 	/*class used by jquery to toggle nav ul*/
 .show{
