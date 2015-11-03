@@ -60,7 +60,7 @@ header{
 }
 .flex-container h1#header-title a{ 
 	font-weight:300;
-	font-size: 20px;
+	font-size: 40px;
 	color: white;
 }
 
@@ -107,7 +107,7 @@ header{
 	}
 	
 	h1{
-		font-size: 50px !important;
+		font-size: 50px;
 	}
 	
 	.navbar{
