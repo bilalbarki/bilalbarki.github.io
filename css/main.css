@@ -58,7 +58,7 @@ header{
 .flex-container a{
 	text-decoration: none;
 }
-.flex-container h1#header-title a{ 
+.flex-container h1{ 
 	font-weight:300;
 	font-size: 40px;
 	color: white;
@@ -95,7 +95,7 @@ header{
 		display:block;
 		position:absolute;
 		right:0;
-
+		font-size:50px;
 		text-decoration: none;
 		color:white;
 	}
@@ -103,16 +103,17 @@ header{
 	.flex-container li{
 	padding:10px;
 	font-weight:700px;
-	font-size:50px ;
+	font-size:150% ;
 	}
 	
-	h1{
-		font-size: 50px;
-	}
 	
-	.navbar{
-		font-size:50px;
-	}
+	
+	
+		
+	
+	
+	
+	
 
 	/*class used by jquery to toggle nav ul*/
 .show{
