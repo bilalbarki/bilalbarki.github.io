@@ -3,6 +3,8 @@ nav{
 	border-bottom: 1px solid #e7e7e7;
 }
 
+
+
 header{
 	background:black;
 	font-family: 'lato', serif;
@@ -70,7 +72,9 @@ header{
 
 
 
-@media (max-width:668px){
+@media (max-width:1024px){
+	
+	
 	.flex-container{
 		flex-direction:column;
 		
