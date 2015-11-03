@@ -27,7 +27,6 @@ header{
 
 .flex-container li{
 	padding:10px;
-	font-weight:700px;
 	font-size:15px ;
 	/*border: 2px solid grey;*/
 }
@@ -57,7 +56,6 @@ header{
 	text-decoration: none;
 }
 .flex-container h1#header-title a{ 
-	font-weight:300;
 	font-size: 20px;
 	color: white;
 }
