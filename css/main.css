@@ -1,0 +1,109 @@
+nav{
+	height: 51px;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+header{
+	background:black;
+	font-family: 'lato', serif;
+	
+}
+
+.flex-container{
+	background:black;
+	width:75%;
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.flex-container ul{
+	display: flex;
+	background:black;
+
+}
+
+.flex-container li{
+	padding:10px;
+	font-weight:700px;
+	font-size:15px ;
+	/*border: 2px solid grey;*/
+}
+
+.flex-container li:hover{
+	background:grey;
+}
+
+/*childs can be used to access individual ul elements*/
+.flex-container ul>li:first-child>a{
+	color:white;
+}
+
+.flex-container ul>li:nth-child(2)>a{
+	color:white;
+}
+
+.flex-container ul>li:nth-child(3)>a{
+	color:white;
+}
+
+.flex-container ul>li:nth-child(4)>a{
+	color:white;
+}
+
+.flex-container a{
+	text-decoration: none;
+}
+.flex-container h1#header-title a{ 
+	font-weight:300;
+	font-size: 20px;
+	color: white;
+}
+
+.navbar{
+	display:none;
+	font-size:20px;
+
+}
+
+
+
+@media (max-width:668px){
+	.flex-container{
+		flex-direction:column;
+		
+		width:100%;	
+
+	}
+
+	.flex-container ul{
+		flex-direction:column;	
+		text-align:center;
+		width:100%;
+		display:none;
+		
+	}
+	
+
+	.navbar{
+		display:block;
+		position:absolute;
+		right:0;
+
+		text-decoration: none;
+		color:white;
+	}
+
+	/*class used by jquery to toggle nav ul*/
+.show{
+	display:block !important;
+}
+
+/*to be used later
+@media (max-width:250px){
+	.flex-container h1{
+		tex
+	}
+}/*
