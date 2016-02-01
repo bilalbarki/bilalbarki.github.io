@@ -1,0 +1,18 @@
+.post img{
+	float:left;
+	width:75px;
+	height:auto;
+}
+
+#time::before{
+	content: "\00b7";
+}
+
+#postHeader span{
+	color:#e0e0d1;
+}
+
+article{
+	float:right;
+	width:700px;
+}

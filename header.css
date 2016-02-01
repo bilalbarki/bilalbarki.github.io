@@ -1,0 +1,30 @@
+header>img{
+	width:70px;
+	height:auto;
+	float:left;
+}
+
+.upperNav{
+	text-align:right;
+}
+
+header a{
+	text-decoration:none;
+}
+
+header li{
+	display:inline-block;
+}
+
+
+.lowerNav{
+	text-align:right;
+	margin-right:100px;
+}
+
+.lowerNav ul>li{
+	margin:0 0 0 10px;
+	background:grey;
+	padding:4px;
+	border:1px solid black;
+}
