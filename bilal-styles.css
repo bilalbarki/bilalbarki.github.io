@@ -1,0 +1,41 @@
+body{
+	background: #f5f8fa;
+}
+
+a{
+	text-decoration: none;
+	color:#000000;
+}
+
+#maincontainer{
+	width:992px;
+	border:1px solid grey;
+	margin:auto;
+	font-family:'Open Sans',Verdana,Arial;
+
+}
+
+.grey{
+	color:#e0e0d1;
+}
+
+b{
+	font-weight: bold;
+}
+
+.clearFloat{
+	clear:both;
+}
+
+.clearLeft{
+	clear:left;
+}
+
+.clearRight{
+	clear:right;
+}
+
+.aHoverColorUnderline:hover{
+	text-decoration:underline;
+	color:#0084B4;
+}

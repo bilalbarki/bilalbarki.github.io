@@ -1,7 +1,61 @@
-#notableUsersHeader img{
-	float:left;
-	width:50px;
-	height:auto;
+/*to be in the general css later*/
+aside h2, aside p{
+	font-size: 13px;
+}
+
+aside h1{
+	font-size:18px;
+}
+
+/*end*/
+aside{
+	overflow: hidden;
+}
+
+.notableUsersHeading li, .notableUsersHeading h1, .notableUsersHeading ul{
+	display:inline-block;
 
 }
 
+.noteableUsersHeading ul{
+margin-left: auto;
+margin-right:0;
+}
+
+
+.notableUsersList img{
+	float:left;
+	width:50px;
+	height:auto;
+	border-radius: 5px;
+	margin-right:5px;
+}
+
+
+.notableUsersList{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+
+
+.asideLinks li{
+	display:inline-block;
+	padding:3px;
+	color: #8899a6;
+}
+.asideLinks a{
+	color: #8899a6;
+	
+}
+
+.asideGeneralBlock{
+	
+	background:#ffffff;
+	width:90%;
+	border-radius:5px;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-bottom:14px;
+}

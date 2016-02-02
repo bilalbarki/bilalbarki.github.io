@@ -1,30 +1,58 @@
-header>img{
+header {
+    font-family: Futura, sans-serif;
+}
+
+#mainTitle {
+    display: block;
+    font-size: 5em;
+    width: 50%;
+    text-align: center;
+    float: left;
+    margin: 0 0 0 18%;
+}
+
+header>img {
 	width:70px;
 	height:auto;
 	float:left;
 }
 
-.upperNav{
+.upperNav {
 	text-align:right;
+}
+
+header li {
+    font-size: 2em;
 }
 
 header a{
 	text-decoration:none;
+    color: #222;
 }
 
-header li{
+.upperNav li {
 	display:inline-block;
 }
 
 
 .lowerNav{
+    float: right;
 	text-align:right;
 	margin-right:100px;
 }
 
-.lowerNav ul>li{
+.lowerNav ul>li {
+    float: left;
 	margin:0 0 0 10px;
 	background:grey;
 	padding:4px;
 	border:1px solid black;
+}
+
+.gradientButton {
+    background: red;
+    background: -webkit-linear-gradient(red, yellow);
+    background: -o-linear-gradient(red, yellow); 
+    background: -moz-linear-gradient(red, yellow);
+    background: linear-gradient(red, yellow);
 }

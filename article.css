@@ -1,18 +1,100 @@
-.post img{
-	float:left;
-	width:75px;
-	height:auto;
+/*to be shifted to general with em*/
+
+article{
+	font-size:7px;
+}
+article h2{
+	font-size:14px;
 }
 
-#time::before{
+/*end*/
+
+.post img{
+	float:left;
+	width:48px;
+	height:auto;
+	border-radius: 5px;
+	margin-right:5px;
+}
+
+.time::before{
 	content: "\00b7";
 }
 
-#postHeader span{
-	color:#e0e0d1;
+.post{
+	border-bottom:1px solid #dedede;
+	padding:10px;
 }
 
 article{
 	float:right;
 	width:700px;
+	
+	overflow:hidden;
 }
+
+.blockFeed{
+	
+	background:#ffffff;
+	
+	border-radius:5px;
+	border:1px solid #dedede;
+	
+	
+}
+
+.post:hover{
+	background:#f5f8fa;
+	cursor:pointer;
+}
+/*Like, retweet, reply css*/
+.replyIcon::before{
+	font-family:FontAwesome;
+	content: "\f112";
+	
+}
+
+.reTweetIcon::before{
+	font-family:FontAwesome;
+	content: "\f079";
+	
+}
+
+.likeIcon::before{
+	font-family:FontAwesome;
+	content: "\f004";
+	
+}
+
+.moreIcon::before{
+	font-family:FontAwesome;
+	content: "\f141";
+	
+}
+article li>a{
+	color:#a7a7a7;
+}
+.replyIcon:hover{
+	color:#0084B4 !important;
+}
+.reTweetIcon:hover{
+	color:#7ab056 !important;
+}
+.likeIcon:hover{
+	color:#e51e1e !important;
+}
+.moreIcon:hover{
+	color:#0084B4 !important;
+}
+
+.postSocialButtons li{
+	font-size: 16px;
+	margin-right:60px;
+	display:inline-block;
+
+}
+.postSocialButtons{
+	padding:10px 0 0 0;
+}
+
+/*end*/

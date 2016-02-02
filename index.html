@@ -3,11 +3,16 @@
 <head>
 	
 	<link rel="stylesheet" type="text/css" href="reset.css" />
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="bilal-styles.css" />
+	<link rel="stylesheet" type="text/css" href="mason-styles.css" />
 	<link rel="stylesheet" type="text/css" href="header.css" />
 	<link rel="stylesheet" type="text/css" href="article.css" />
 	<link rel="stylesheet" type="text/css" href="aside.css" />
 	<link rel="stylesheet" type="text/css" href="footer.css" />
+	<link rel="stylesheet" type="text/css" href="buttons.css" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<title>Page Title</title>
 
 </head>
@@ -16,114 +21,186 @@
 	<div id="maincontainer">
 		<header>
 			<img src="images/logo.png" alt="" />
-			<div class="upperNav">
+            <h1 id="mainTitle">Hasher</h1>
+			<nav class="upperNav">
 				<ul>
-  					<li><a href="#">Edit my profile</a></li>
+  					<li class="gradientButton"><a href="#">Edit my profile</a></li>
   					<li>|</li>
-  					<li><a href="#">Logout</a></li>
+  					<li class="gradientButton"><a href="#">Logout</a></li>
 				</ul>
-			</div>
+			</nav>
 			<div class="clearFloat"></div>
-			<h1>this is a tagline</h1>
-			<div class="lowerNav">
+			<h3 id="tagLine"><em>"Let's all just hash this out together..."</em></h3>
+			<nav class="lowerNav">
 				<ul>
   					<li><a href="#">Home</a></li>
   					<li><a href="#">My Statuses</a></li>
   					<li><a href="#">All Users</a></li>
 				</ul>
-			</div>
+			</nav>
+            <div class="clearFloat"></div>
 		</header>
 
 		<main>
 			<article>
-				<div class="post">
-					<div id="postHeader">
-						<img src="images/photo1.jpg" alt="" />
-						<h2><b>David Eicher</b><span>&nbsp;@DavidEicher&nbsp;</span><span id="time">1h</span></h2>
+				<div class="blockFeed">
+					<div class="post">
+						<div class="postHeader">
+							<img src="images/photo1.jpg" alt="" />
+							<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim.</p>
+						
+						<div class="clearFloat"></div>
+							<ul class="postSocialButtons">
+	  							<li><a href="#"><span class="replyIcon"></span></i></a></li>
+	  							<li><a href="#"><span class="reTweetIcon"></span></a></li>
+	  							<li><a href="#"><span class="likeIcon"></span></a></li>
+	  							<li><a href="#"><span class="moreIcon"></span></a></li>
+							</ul>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Praesent sit amet molestie sapien. Duis laoreet nulla quis quam maximus, nec laoreet metus sollicitudin. Mauris aliquet lacus orci, in tempus ipsum pellentesque vitae. Mauris ut bibendum sem, in dictum mi. Vivamus varius mauris ex, non malesuada sem pulvinar ullamcorper. Vestibulum ullamcorper, urna eget scelerisque molestie, quam nulla lobortis leo, vel aliquet tellus metus sit amet enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras feugiat libero tincidunt dolor tristique dictum.</p>
-					<div class="clearFloat"></div>
-				</div>
-				<div class="post">
-					<div id="postHeader">
-						<img src="images/photo3.jpg" alt="" />
-						<h2><b>Sarah Kane</b><span>&nbsp;@DavidEicher&nbsp;</span><span id="time">1h</span></h2>
+					<div class="post">
+						<div class="postHeader">
+							<img src="images/photo3.jpg" alt="" />
+							<h2><b><a href="#" class="aHoverColorUnderline">Sarah Kane</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Praesent sit amet molestie sapien. Duis laoreet nulla quis quam maximus, nec laoreet metus sollicitudin.</p>
+						<div class="clearFloat"></div>
+						<ul class="postSocialButtons">
+  							<li><a href="#"><span class="replyIcon"></span></i></a></li>
+  							<li><a href="#"><span class="reTweetIcon"></span></a></li>
+  							<li><a href="#"><span class="likeIcon"></span></a></li>
+  							<li><a href="#"><span class="moreIcon"></span></a></li>
+						</ul>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Praesent sit amet molestie sapien. Duis laoreet nulla quis quam maximus, nec laoreet metus sollicitudin. Mauris aliquet lacus orci, in tempus ipsum pellentesque vitae. Mauris ut bibendum sem, in dictum mi. Vivamus varius mauris ex, non malesuada sem pulvinar ullamcorper. Vestibulum ullamcorper, urna eget scelerisque molestie, quam nulla lobortis leo, vel aliquet tellus metus sit amet enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras feugiat libero tincidunt dolor tristique dictum.</p>
-					<div class="clearFloat"></div>
-				</div>
-				<div class="post">
-					<div id="postHeader">
-						<img src="images/photo2.jpg" alt="" />
-						<h2><b>Christopher Wayne</b><span>&nbsp;@DavidEicher&nbsp;</span><span id="time">1h</span></h2>
+					<div class="post">
+						<div class="postHeader">
+							<img src="images/photo2.jpg" alt="" />
+							<h2><b><a href="#" class="aHoverColorUnderline">Christopher Wayne</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Praesent sit amet molestie sapien. Duis laoreet nulla quis quam maximus, nec laoreet metus sollicitudin. Mauris aliquet lacus orci, in tempus ipsum pellentesque vitae. Mauris ut bibendum sem, in dictum mi. Vivamus varius mauris ex, non malesuada sem pulvinar ullamcorper.</p>
+						<div class="clearFloat"></div>
+						<ul class="postSocialButtons">
+  							<li><a href="#"><span class="replyIcon"></span></i></a></li>
+  							<li><a href="#"><span class="reTweetIcon"></span></a></li>
+  							<li><a href="#"><span class="likeIcon"></span></a></li>
+  							<li><a href="#"><span class="moreIcon"></span></a></li>
+						</ul>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Praesent sit amet molestie sapien. Duis laoreet nulla quis quam maximus, nec laoreet metus sollicitudin. Mauris aliquet lacus orci, in tempus ipsum pellentesque vitae. Mauris ut bibendum sem, in dictum mi. Vivamus varius mauris ex, non malesuada sem pulvinar ullamcorper. Vestibulum ullamcorper, urna eget scelerisque molestie, quam nulla lobortis leo, vel aliquet tellus metus sit amet enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras feugiat libero tincidunt dolor tristique dictum.</p>
-					<div class="clearFloat"></div>
-				</div>
-				<div class="post">
-					<div id="postHeader">
-						<img src="images/photo1.jpg" alt="" />
-						<h2><b>David Eicher</b><span>&nbsp;@DavidEicher&nbsp;</span><span id="time">1h</span></h2>
+					<div class="post">
+						<div class="postHeader">
+							<img src="images/photo1.jpg" alt="" />
+							<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Praesent sit amet molestie sapien. Duis laoreet nulla quis quam maximus, nec laoreet metus sollicitudin. Mauris aliquet lacus orci, in tempus ipsum pellentesque vitae. Mauris ut bibendum sem, in dictum mi. Vivamus varius mauris ex, non malesuada sem pulvinar ullamcorper. Vestibulum ullamcorper, urna eget scelerisque molestie, quam nulla lobortis leo, vel aliquet tellus metus sit amet enim.</p>
+						<div class="clearFloat"></div>
+						<ul class="postSocialButtons">
+  							<li><a href="#"><span class="replyIcon"></span></i></a></li>
+  							<li><a href="#"><span class="reTweetIcon"></span></a></li>
+  							<li><a href="#"><span class="likeIcon"></span></a></li>
+  							<li><a href="#"><span class="moreIcon"></span></a></li>
+						</ul>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Praesent sit amet molestie sapien. Duis laoreet nulla quis quam maximus, nec laoreet metus sollicitudin. Mauris aliquet lacus orci, in tempus ipsum pellentesque vitae. Mauris ut bibendum sem, in dictum mi. Vivamus varius mauris ex, non malesuada sem pulvinar ullamcorper. Vestibulum ullamcorper, urna eget scelerisque molestie, quam nulla lobortis leo, vel aliquet tellus metus sit amet enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras feugiat libero tincidunt dolor tristique dictum.</p>
-					<div class="clearFloat"></div>
 				</div>
 				
 			</article>
 
 			<aside>
-				<div class="notableUsers">
-					<div id="notableUsersHeader">
-						<img src="images/photo1.jpg" alt="" />
-						<table>
-							<tr>
-								<td>
-									<h2><b>David Eicher</b></h2>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet.</p>
-								</td>
-							</tr>
-						</table>
-						<div class="clearLeft"></div>
-					</div>
+				<div class="asideGeneralBlock asideUsers">
 					
-					<div id="notableUsersHeader">
-						<img src="images/photo2.jpg" alt="" />
-						<table>
-							<tr>
-								<td>
-									<h2><b>Christopher Wayne</b></h2>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-								</td>
-							</tr>
-						</table>
-						<div class="clearLeft"></div>
-					</div>
+						<div class="notableUsersHeading">
+							<h1><b>Who to follow</b></h1>
+							<ul>
+		  						<li><a href="#" class="aHoverColorUnderline" style="color:#0084B4">Refresh</a></li>
+		  						<li>-</li>
+		  						<li><a href="#" class="aHoverColorUnderline" style="color:#0084B4">View all</a></li>
+							</ul>
+						</div>
+						<div class="notableUsersList">
+							<img src="images/photo1.jpg" alt="" />
+							<table>
+								<tr>
+									<td>
+										<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;</span></h2>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Lorem ipsum dolor sit amet.</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="followButton"><span class="followIcon"></span><b>Follow</b></button>
+									</td>
+								</tr>
+							</table>
+							<div class="clearLeft"></div>
+						</div>
+						
+						<div class="notableUsersList">
+							<img src="images/photo2.jpg" alt="" />
+							<table>
+								<tr>
+									<td>
+										<h2><b><a href="#" class="aHoverColorUnderline">Chris Wayne</a></b><span class="grey">&nbsp;@ChrisWayne&nbsp;</span></h2>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="followButton"><span class="followIcon"></span><b>Follow</b></button>
+									</td>
+								</tr>
+							</table>
+							<div class="clearLeft"></div>
+						</div>
 
-					<div id="notableUsersHeader">
-						<img src="images/photo3.jpg" alt="" />
-						<table>
-							<tr>
-								<td>
-									<h2><b>Sarah Kane</b></h2>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet.</p>
-								</td>
-							</tr>
-						</table>
-						<div class="clearLeft"></div>
-					</div>
+						<div class="notableUsersList">
+							<img src="images/photo3.jpg" alt="" />
+							<table>
+								<tr>
+									<td>
+										<h2><b><a href="#" class="aHoverColorUnderline">Sarah Kane</a></b><span  class="grey">&nbsp;@SarahKane&nbsp;</span></h2>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Lorem ipsum dolor sit amet, consectetur.</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="followButton"><span class="followIcon"></span><b>Follow</b></button>
+									</td>
+								</tr>
+							</table>
+							<div class="clearLeft"></div>
+						</div>
+						<p><a href="#" class="aHoverColorUnderline" style="color:#0084B4">Find Friends</a></p>
 					
+				</div>
+
+				<div class="asideGeneralBlock asideLinks">
+					<ul>
+		  					<li>&#169;&nbsp;Hash</li>
+		  					<li><a href="#">About</a></li>
+		  					<li><a href="#">Help</a></li>
+		  					<li><a href="#">Terms</a></li>
+		  					<li><a href="#">Privacy</a></li>
+		  					<li><a href="#">Advertise</a></li>
+		  					<li><a href="#">Developers</a></li>
+		  					<li><a href="#">Cookies</a></li>
+		  					<li><a href="#">Lorem</a></li>
+		  					<li><a href="#">Ipsem</a></li>
+		  					<li><a href="#">Amet</a></li>
+		  					<li><a href="#">Adipiscing</a></li>
+		  					<li><a href="#">Tempus</a></li>
+					</ul>
 				</div>
 			</aside>
 			<div class="clearFloat"></div>
