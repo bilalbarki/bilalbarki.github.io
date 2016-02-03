@@ -1,11 +1,17 @@
 /*to be in the general css later*/
 aside h2, aside p{
-	font-size: 13px;
+	font-size: 1em;
 }
 
 aside h1{
-	font-size:18px;
+	font-size:1.4em;
 }
+
+.asideLinks li{
+	font-size:0.9em;
+}
+
+
 
 /*end*/
 aside{
@@ -17,9 +23,8 @@ aside{
 
 }
 
-.noteableUsersHeading ul{
-margin-left: auto;
-margin-right:0;
+.notableUsersHeading h1{
+	color:#66757f
 }
 
 
@@ -51,7 +56,7 @@ margin-right:0;
 }
 
 .asideGeneralBlock{
-	
+	margin-left:auto; margin-right:0;
 	background:#ffffff;
 	width:90%;
 	border-radius:5px;

@@ -1,58 +1,135 @@
-header {
-    font-family: Futura, sans-serif;
+
+header{
+	background-color: #ffffff;
+	margin-bottom:5px;
+	-webkit-box-shadow: 0 4px 4px -2px #dedede;
+   -moz-box-shadow: 0 4px 4px -2px #dedede;
+        box-shadow: 0 4px 4px -2px #dedede;
+
 }
 
-#mainTitle {
-    display: block;
-    font-size: 5em;
-    width: 50%;
-    text-align: center;
-    float: left;
-    margin: 0 0 0 18%;
+.paddingHeader{
+	padding: 3px 10px 0 10px;
 }
 
-header>img {
-	width:70px;
+.logo{
+	width:40px;
 	height:auto;
 	float:left;
+	padding-left:4px;
 }
 
-.upperNav {
+.upperNav{
 	text-align:right;
 }
 
-header li {
-    font-size: 2em;
-}
+.upperNav{
 
+}
 header a{
 	text-decoration:none;
-    color: #222;
 }
 
-.upperNav li {
+header li{
 	display:inline-block;
+}
+
+header li>img{
+	width:25px;
+	height:auto;
+	margin-right:5px;
+	border-radius:5px;
+}
+
+header li{
+	vertical-align:middle;
 }
 
 
 .lowerNav{
-    float: right;
 	text-align:right;
 	margin-right:100px;
 }
-
-.lowerNav ul>li {
-    float: left;
+/*
+.lowerNav ul>li{
 	margin:0 0 0 10px;
 	background:grey;
 	padding:4px;
 	border:1px solid black;
+}*/
+
+
+/*nav Icons*/
+.homeIcon::before{
+	font-family:FontAwesome;
+	content: "\F015";
+	
 }
 
-.gradientButton {
-    background: red;
-    background: -webkit-linear-gradient(red, yellow);
-    background: -o-linear-gradient(red, yellow); 
-    background: -moz-linear-gradient(red, yellow);
-    background: linear-gradient(red, yellow);
+.homeIcon::before{
+	font-family:FontAwesome;
+	content: "\F015";
+	margin-right:3px;
 }
+
+.statusesIcon::before{
+	font-family:FontAwesome;
+	content: "\F0C1";
+	margin-right:3px;
+}
+
+
+.usersIcon::before{
+	font-family:FontAwesome;
+	content: "\F0CA";
+	margin-right:3px;
+}
+
+/* start of search bar*/
+
+.searchIcon::before{
+	font-family:FontAwesome;
+	content: "\F002";
+	font-size:13px;
+	color:#66757f;
+}
+
+.search{
+	
+	border-right:none;
+	border-left:1px solid #dedede;
+	border-top:1px solid #dedede;
+	border-bottom:1px solid #dedede;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 0 2px 0 12px;
+	outline:none;
+	height:25px;
+	background-color:#f5f8fa;
+}
+
+.searchButton{
+	
+	border-left:none;
+	border-right:1px solid #dedede;
+	border-top:1px solid #dedede;
+	border-bottom:1px solid #dedede;
+	cursor:pointer;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding: 0 12px 0 2px;
+	outline:none;
+	height:27px;
+	background-color:#f5f8fa;
+}
+
+
+.form{
+	margin-right:8px;
+}
+
+.backgroundWhite{
+	background-color:#ffffff !important;
+}
+
+/*End

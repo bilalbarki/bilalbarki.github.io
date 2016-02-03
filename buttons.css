@@ -1,3 +1,10 @@
+/*Follow Button*/
+.followIcon::before{
+    font-family:FontAwesome;
+    content: "\f234";
+    color:#55acee;
+    margin-right:3px;
+}
 
 .followButton{
     margin-top:5px;
@@ -11,30 +18,58 @@
     border-radius:5px;
     cursor:pointer;
     border:1px solid #dedede;
+    outline:none;
    
-
-    -webkit-transition: all 2s;
-    -moz-transition: all 2s;
-    -o-transition: all 2s;
-    transition: all 2s;
 }
 
 .followButton:hover {
     
      background: linear-gradient(#d0d0d0,#ffffff);
 
+
 }
 
-.followIcon::before{
-	font-family:FontAwesome;
-	content: "\f234";
-	color:#55acee;
-	margin-right:3px;
-}
 
-.followButton:focus{
-	box-shadow: 0 0 3px #5974c0;
-    outline: 0;
+.followButton:active{
+	
+    
     background: linear-gradient(#ffffff,#ffffff);
      
 }
+/*End*/
+
+/*Nav Link Buttons*/
+
+.navButton {
+    background-color: #efecec;
+    /*background-color: #4CAF50;*/
+    
+    color: #66757f;
+    padding: 8px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border:1px solid #dedede;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    cursor: pointer;
+        transition: background-color 1.25s, color 1s;
+
+}
+
+.navButton:hover {
+    padding-bottom: 6px !important;
+    border-bottom:#55acee solid 3px;
+    background-color: white;
+    
+    color:#55acee;
+}
+
+.navButtonCurrentlyViewing{
+    padding-bottom: 6px !important;
+    border-bottom:#55acee solid 3px;
+
+    
+}
+/*End*/

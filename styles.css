@@ -2,6 +2,10 @@ body{
 	background: #f5f8fa;
 }
 
+em{
+	 font-style: italic;
+}
+
 a{
 	text-decoration: none;
 	color:#000000;
@@ -9,10 +13,10 @@ a{
 
 #maincontainer{
 	width:992px;
-	border:1px solid grey;
+	border:1px solid #dedede;
 	margin:auto;
 	font-family:'Open Sans',Verdana,Arial;
-
+	font-size:13px;
 }
 
 .grey{
@@ -42,4 +46,15 @@ b{
 
 .aHoverUnderline:hover{
 	text-decoration:underline;
+}
+
+/*
+main{
+	margin-top:10px;
+	border:1px solid #dedede;
+}
+*/
+
+.padding{
+	padding: 3px 10px 9px 10px;
 }

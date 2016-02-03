@@ -3,8 +3,7 @@
 <head>
 	
 	<link rel="stylesheet" type="text/css" href="reset.css" />
-	<link rel="stylesheet" type="text/css" href="bilal-styles.css" />
-	<link rel="stylesheet" type="text/css" href="mason-styles.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 	<link rel="stylesheet" type="text/css" href="header.css" />
 	<link rel="stylesheet" type="text/css" href="article.css" />
 	<link rel="stylesheet" type="text/css" href="aside.css" />
@@ -19,28 +18,37 @@
 <body>
 
 	<div id="maincontainer">
+		
 		<header>
-			<img src="images/logo.png" alt="" />
-            <h1 id="mainTitle">Hasher</h1>
-			<nav class="upperNav">
+		<div class="paddingHeader">
+			<img src="images/logo.png" alt="" class="logo" />
+			<div class="upperNav">
 				<ul>
-  					<li class="gradientButton"><a href="#">Edit my profile</a></li>
+  					<li>
+  						<div class="form">
+	  						<form>
+								<input type="text" class="search" placeholder="Search..." id="search"><span><button type="submit" value="Search" class="searchButton" id="searchButton"><span class="searchIcon"></span></button></span>
+							</form>
+						</div>
+  					</li>
+  					<li><img src="images/photo1.jpg" alt="" /></li>
+  					<li><a href="#" class="aHoverUnderline" style="color:#0084B4">Edit my profile</a></li>
   					<li>|</li>
-  					<li class="gradientButton"><a href="#">Logout</a></li>
+  					<li><a href="#" class="aHoverUnderline" style="color:#0084B4">Logout</a></li>
 				</ul>
-			</nav>
+			</div>
 			<div class="clearFloat"></div>
-			<h3 id="tagLine"><em>"Let's all just hash this out together..."</em></h3>
-			<nav class="lowerNav">
+			<h1><b>Share it<em>!</em></b></h1>
+			<div class="lowerNav">
 				<ul>
-  					<li><a href="#">Home</a></li>
-  					<li><a href="#">My Statuses</a></li>
-  					<li><a href="#">All Users</a></li>
+  					<li><a href="#" class="navButton navButtonCurrentlyViewing"><span class="homeIcon"></span>Home</a></li>
+  					<li><a href="#" class="navButton"><span class="statusesIcon"></span>My Statuses</a></li>
+  					<li><a href="#" class="navButton"><span class="usersIcon"></span>All Users</a></li>
 				</ul>
-			</nav>
-            <div class="clearFloat"></div>
+			</div>
+		</div>
 		</header>
-
+		<div class="padding">
 		<main>
 			<article>
 				<div class="blockFeed">
@@ -53,7 +61,7 @@
 						
 						<div class="clearFloat"></div>
 							<ul class="postSocialButtons">
-	  							<li><a href="#"><span class="replyIcon"></span></i></a></li>
+	  							<li><a href="#"><span class="replyIcon"></span></a></li>
 	  							<li><a href="#"><span class="reTweetIcon"></span></a></li>
 	  							<li><a href="#"><span class="likeIcon"></span></a></li>
 	  							<li><a href="#"><span class="moreIcon"></span></a></li>
@@ -62,12 +70,12 @@
 					<div class="post">
 						<div class="postHeader">
 							<img src="images/photo3.jpg" alt="" />
-							<h2><b><a href="#" class="aHoverColorUnderline">Sarah Kane</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+							<h2><b><a href="#" class="aHoverColorUnderline">Sarah Kane</a></b><span class="grey">&nbsp;@SarahKane&nbsp;<span class="time">1h</span></span></h2>
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Praesent sit amet molestie sapien. Duis laoreet nulla quis quam maximus, nec laoreet metus sollicitudin.</p>
 						<div class="clearFloat"></div>
 						<ul class="postSocialButtons">
-  							<li><a href="#"><span class="replyIcon"></span></i></a></li>
+  							<li><a href="#"><span class="replyIcon"></span></a></li>
   							<li><a href="#"><span class="reTweetIcon"></span></a></li>
   							<li><a href="#"><span class="likeIcon"></span></a></li>
   							<li><a href="#"><span class="moreIcon"></span></a></li>
@@ -76,12 +84,12 @@
 					<div class="post">
 						<div class="postHeader">
 							<img src="images/photo2.jpg" alt="" />
-							<h2><b><a href="#" class="aHoverColorUnderline">Christopher Wayne</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+							<h2><b><a href="#" class="aHoverColorUnderline">Chris Wayne</a></b><span class="grey">&nbsp;@ChrisWayne&nbsp;<span class="time">1h</span></span></h2>
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Praesent sit amet molestie sapien. Duis laoreet nulla quis quam maximus, nec laoreet metus sollicitudin. Mauris aliquet lacus orci, in tempus ipsum pellentesque vitae. Mauris ut bibendum sem, in dictum mi. Vivamus varius mauris ex, non malesuada sem pulvinar ullamcorper.</p>
 						<div class="clearFloat"></div>
 						<ul class="postSocialButtons">
-  							<li><a href="#"><span class="replyIcon"></span></i></a></li>
+  							<li><a href="#"><span class="replyIcon"></span></a></li>
   							<li><a href="#"><span class="reTweetIcon"></span></a></li>
   							<li><a href="#"><span class="likeIcon"></span></a></li>
   							<li><a href="#"><span class="moreIcon"></span></a></li>
@@ -95,7 +103,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nulla quis velit pellentesque, sit amet eleifend lectus aliquet. Cras sed ultrices justo, vel posuere enim. Praesent sit amet molestie sapien. Duis laoreet nulla quis quam maximus, nec laoreet metus sollicitudin. Mauris aliquet lacus orci, in tempus ipsum pellentesque vitae. Mauris ut bibendum sem, in dictum mi. Vivamus varius mauris ex, non malesuada sem pulvinar ullamcorper. Vestibulum ullamcorper, urna eget scelerisque molestie, quam nulla lobortis leo, vel aliquet tellus metus sit amet enim.</p>
 						<div class="clearFloat"></div>
 						<ul class="postSocialButtons">
-  							<li><a href="#"><span class="replyIcon"></span></i></a></li>
+  							<li><a href="#"><span class="replyIcon"></span></a></li>
   							<li><a href="#"><span class="reTweetIcon"></span></a></li>
   							<li><a href="#"><span class="likeIcon"></span></a></li>
   							<li><a href="#"><span class="moreIcon"></span></a></li>
@@ -109,11 +117,11 @@
 				<div class="asideGeneralBlock asideUsers">
 					
 						<div class="notableUsersHeading">
-							<h1><b>Who to follow</b></h1>
+							<h1>Who to follow</h1>
 							<ul>
-		  						<li><a href="#" class="aHoverColorUnderline" style="color:#0084B4">Refresh</a></li>
+		  						<li><a href="#" class="aHoverUnderline" style="color:#0084B4">Refresh</a></li>
 		  						<li>-</li>
-		  						<li><a href="#" class="aHoverColorUnderline" style="color:#0084B4">View all</a></li>
+		  						<li><a href="#" class="aHoverUnderline" style="color:#0084B4">View all</a></li>
 							</ul>
 						</div>
 						<div class="notableUsersList">
@@ -135,7 +143,7 @@
 									</td>
 								</tr>
 							</table>
-							<div class="clearLeft"></div>
+							<div class="clearRight"></div>
 						</div>
 						
 						<div class="notableUsersList">
@@ -157,7 +165,7 @@
 									</td>
 								</tr>
 							</table>
-							<div class="clearLeft"></div>
+							<div class="clearRight"></div>
 						</div>
 
 						<div class="notableUsersList">
@@ -179,9 +187,9 @@
 									</td>
 								</tr>
 							</table>
-							<div class="clearLeft"></div>
+							<div class="clearRight"></div>
 						</div>
-						<p><a href="#" class="aHoverColorUnderline" style="color:#0084B4">Find Friends</a></p>
+						<p><a href="#" class="aHoverUnderline" style="color:#0084B4">Find Friends</a></p>
 					
 				</div>
 
@@ -208,10 +216,26 @@
 			<footer>
 				<p>This website is in beta</p>
 			</footer>
-
+			</div>
 		</main>
-
+	
 	</div>
+<script>
+
+	var input = document.getElementById("search");
+	var searchButton = document.getElementById("searchButton");
+
+	input.onfocus = function() {
+		input.className = "search backgroundWhite";
+		searchButton.className = "searchButton backgroundWhite";
+	}
+
+	input.onblur = function() {
+		input.className = "search";
+		searchButton.className = "searchButton";
+	}
+
+</script>
 
 </body>
 </html>
