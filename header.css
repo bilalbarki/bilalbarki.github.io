@@ -30,7 +30,7 @@ header a{
 	text-decoration:none;
 }
 
-header li{
+header li, header ul{
 	display:inline-block;
 }
 
@@ -132,4 +132,8 @@ header li{
 	background-color:#ffffff !important;
 }
 
-/*End
+/*End*/
+
+.pipes li + li::before {
+    content: " | ";
+}
