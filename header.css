@@ -13,19 +13,37 @@ header{
 }
 
 .logo{
-	width:40px;
+	width:50px;
 	height:auto;
 	float:left;
-	padding-left:4px;
+	margin: 5px 0 0 65px;
+}
+
+#mainTitle {
+    font-family: futura, sans-serif;
+    color: #4996FF;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 3.5em;
+    float: left;
+    margin-top: 25px;
+    margin-left: 190px;
+    text-align: center;
+}
+
+#tagLine {
+    float: left;
+    color: #333;
+    font-size: 1.6em;
+    margin: 5px 0 0 10px;
+    line-height: 1em;
 }
 
 .upperNav{
 	text-align:right;
+    margin-top: 5px;
+    margin-right: 20px;
 }
 
-.upperNav{
-
-}
 header a{
 	text-decoration:none;
 }
@@ -48,7 +66,7 @@ header li{
 
 .lowerNav{
 	text-align:right;
-	margin-right:100px;
+	margin-right:10px;
 }
 /*
 .lowerNav ul>li{
@@ -92,10 +110,11 @@ header li{
 	content: "\F002";
 	font-size:13px;
 	color:#66757f;
+    margin-right: 3px;
 }
 
 .search{
-	
+	width: 0px;
 	border-right:none;
 	border-left:1px solid #dedede;
 	border-top:1px solid #dedede;
@@ -122,6 +141,11 @@ header li{
 	height:27px;
 	background-color:#f5f8fa;
 }
+
+.clicked {
+    width: 110px;
+    -webkit-transition:1s;
+ }
 
 
 .form{

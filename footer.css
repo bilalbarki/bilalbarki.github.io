@@ -1,13 +1,18 @@
 footer{
-		font-size:0.9em;
-            position:fixed;
-            bottom: 0;
-            right:0;
-            margin-left:auto; 
-            margin-right:0;
-            background:#ffffff;
-	
-			border-radius:5px;
-			border:1px solid #dedede;
+    position:fixed;
+    bottom: 0;
+    right:0;
+    margin-left:auto; 
+    margin-right:0;
+    background:#ffffff;
+    width: 250px;
+    height: 40px;
+    border-radius:5px;
+    border:1px solid #dedede;
+    text-align: center;
+}
 
+footer p {
+    font-size: 1.6em;
+    line-height: 1.9em;
 }

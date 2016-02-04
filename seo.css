@@ -1,0 +1,26 @@
+.hidden{
+	display:none;
+}
+
+.FAQ h7 {
+	font-size:18px;
+	font-weight:bold;
+}
+
+.FAQ h6, .FAQ h5, .FAQ h5, .FAQ h4, .FAQ h3, .FAQ h2, .FAQ h1{
+	font-size:16px;
+	font-weight:bold;
+	margin-top: 5px;
+}
+
+.FAQ{
+	padding:12px;
+}
+
+.FAQ a{
+	color:#0084B4;
+}
+
+.FAQ div{
+	margin-top:5px;
+}
