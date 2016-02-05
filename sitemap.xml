@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>http://bilalbarki.github.io/index.html</loc>
-      <lastmod>2016-02-04</lastmod>
+      <lastmod>2016-02-05</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>http://bilalbarki.github.io/about.html</loc>
-      <lastmod>2016-02-04</lastmod>
+      <loc>http://bilalbarki.github.io/impossible-octopus-fitness.html</loc>
+      <lastmod>2016-02-05</lastmod>
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
    </url>
     <url>
       <loc>http://bilalbarki.github.io/myStatus.html</loc>
-      <lastmod>2016-02-04</lastmod>
+      <lastmod>2016-02-05</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.1</priority>
    </url>
    <url>
       <loc>http://bilalbarki.github.io/allUsers.html</loc>
-      <lastmod>2016-02-04</lastmod>
+      <lastmod>2016-02-05</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.1</priority>
    </url>
