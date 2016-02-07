@@ -1,3 +1,4 @@
+/*Styles for the header*/
 
 header{
 	background-color: #ffffff;
@@ -13,28 +14,28 @@ header{
 }
 
 .logo{
-	width:50px;
+	width:60px;
 	height:auto;
 	float:left;
-	margin: 5px 0 0 65px;
+	margin: 5px 0 0 30px;
 }
 
 #mainTitle {
     font-family: futura, sans-serif;
     color: #4996FF;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 3.5em;
+    font-size: 3.0em;
     float: left;
     margin-top: 25px;
-    margin-left: 190px;
+    margin-left: 260px;
     text-align: center;
 }
 
 #tagLine {
     float: left;
     color: #333;
-    font-size: 1.6em;
-    margin: 5px 0 0 10px;
+    font-size: 1.1em;
+    margin: 0 0 0 10px;
     line-height: 1em;
 }
 
@@ -66,7 +67,7 @@ header li{
 
 .lowerNav{
 	text-align:right;
-	margin-right:10px;
+	margin-right:17px;
 }
 /*
 .lowerNav ul>li{
@@ -102,6 +103,7 @@ header li{
 	content: "\F0CA";
 	margin-right:3px;
 }
+/*End*/
 
 /* start of search bar*/
 
