@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>http://bilalbarki.github.io/index.html</loc>
-      <lastmod>2016-02-05</lastmod>
+      <loc>http://impossible-octopus-fitness.getforge.io/index.html</loc>
+      <lastmod>2016-02-21</lastmod>
       <changefreq>daily</changefreq>
-      <priority>0.5</priority>
+      <priority>1.0</priority>
    </url>
    <url>
-      <loc>http://bilalbarki.github.io/impossible-octopus-fitness.html</loc>
-      <lastmod>2016-02-06</lastmod>
+      <loc>http://impossible-octopus-fitness.getforge.io/posts/tentacles.html</loc>
+      <lastmod>2016-02-21</lastmod>
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
    </url>
     <url>
-      <loc>http://bilalbarki.github.io/myStatus.html</loc>
-      <lastmod>2016-02-05</lastmod>
+      <loc>http://impossible-octopus-fitness-faq.github.io/posts/ocean.html</loc>
+      <lastmod>2016-02-21</lastmod>
       <changefreq>daily</changefreq>
-      <priority>0.1</priority>
-   </url>
-   <url>
-      <loc>http://bilalbarki.github.io/allUsers.html</loc>
-      <lastmod>2016-02-05</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.1</priority>
+      <priority>1.0</priority>
    </url>
 </urlset>
