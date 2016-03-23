@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Some Meta tags for SEO-->
+	<meta name="keywords" content="users" />
+	<meta name="description" content="Shows all registered users for twitter clone" />
+	<meta name="author" content="Bilal and Mason" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- All css files to be merged together for publishing in future to minimize http requests -->
+	<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+	<link rel="stylesheet" type="text/css" href="styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="styles/article.css" />
+	<link rel="stylesheet" type="text/css" href="styles/aside.css" />
+	<link rel="stylesheet" type="text/css" href="styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="styles/buttons.css" />
+	<link rel="stylesheet" type="text/css" href="styles/seo.css" />
+	<link rel="stylesheet" type="text/css" href="styles/allUsers.css" />
+	<link rel="stylesheet" type="text/css" href="styles/mediaQueries.css" />
+
+	<script type="text/javascript" src="js/behavior.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<title>Share Site!</title>
+
+</head>
+<body>
+
+	<div id="maincontainer">	<!--main container that contains every other body elements-->
+		
+		<header>
+		<div class="paddingHeader">	<!--paddingHeader for defining header padding-->
+			<div class="logoAndTagline">
+				<button id="nav-button"><span class="menuIcon"></span></button>
+				<div class="logoTagline">
+				<a href="index.html"><img src="images/logo.png" alt="main" class="logo" /></a>
+           
+            
+			<h2 id="tagLine"><b>Share your life<em>!</em></b></h2>
+			 </div>
+			</div>
+				<div class="supernav">
+					<div class="upperNav">	<!--UpperNav contains Logout, edit my profile, picture and searchbar-->
+						
+		  				<ul class="pipes">	<!--piping is used here to add | between the li elements -->
+		  					<li><a href="#" class="aHoverUnderline" style="color:#0084B4">Edit my profile</a></li>
+		  					
+		  					<li><a href="#" class="aHoverUnderline" style="color:#0084B4">Logout</a></li>
+						</ul>
+					</div>
+					
+					<div class="lowerNav">	<!--lowerNav contains menu buttons such as Home, All Users-->
+						<ul>
+							<!--class "navButtonCurrentlyViewing" is used to make the lower border blue of the currently active menu button-->
+		  					<li><a href="index.html" class="navButton"><span class="homeIcon"></span>Home</a></li>
+		  					<li><a href="myStatus.html" class="navButton"><span class="statusesIcon"></span>My Status</a></li>
+		  					<li><a href="allUsers.html" class="navButton navButtonCurrentlyViewing"><span class="usersIcon"></span>All Users</a></li>
+		  					<li style="display:none;"><a href="about.html" class="navButton"><span class="usersIcon"></span>About</a></li>
+						</ul>
+					</div>
+				</div>
+			
+		</div>
+		</header>
+		<div class="padding">	<!--padding for main tag-->
+		<main>
+			<article>
+				<div class="AllUsersList">	<!--Contains all users-->
+					
+						<div class="notableUsersHeading">
+							<p class="grey">All Users</p>
+							<ul>
+		  						<li><a href="#" class="aHoverUnderline" style="color:#0084B4">Refresh</a></li>
+		  						<li>-</li>
+		  						<li><a href="#" class="aHoverUnderline" style="color:#0084B4">Invite friends</a></li>
+							</ul>
+						</div>
+						<div class="notableUsersList">
+							
+							<a href="about.html"><img src="images/photo1.jpg" alt="isttt" /></a>
+							<div class="userInfoAndButtons">
+							<div class="followMessageMore">
+								<button class="followButton"><span class="followIcon"></span><b>Follow</b></button>
+								<button class="followButton"><span class="messageIcon"></span><b>Message</b></button>
+								<button class="followButton"><span class="downIcon"></span></button>
+							</div>
+								<div class="userInfo">
+										<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;</span></h2>
+									
+										<p>Works at Ocean Inc.</p>
+								
+									<p class="grey margin">Studied at Holberton School</p>
+								</div>
+							</div>
+							
+						</div>
+
+						<div class="notableUsersList">
+							
+							<a href="about.html"><img src="images/photo1.jpg" alt="isttt" /></a>
+							<div class="userInfoAndButtons">
+							<div class="followMessageMore">
+								<button class="followButton"><span class="followIcon"></span><b>Follow</b></button>
+								<button class="followButton"><span class="messageIcon"></span><b>Message</b></button>
+								<button class="followButton"><span class="downIcon"></span></button>
+							</div>
+								<div class="userInfo">
+										<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;</span></h2>
+									
+										<p>Works at Ocean Inc.</p>
+								
+									<p class="grey margin">Studied at Holberton School</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="notableUsersList">
+							
+							<a href="about.html"><img src="images/photo1.jpg" alt="isttt" /></a>
+							<div class="userInfoAndButtons">
+							<div class="followMessageMore">
+								<button class="followButton"><span class="followIcon"></span><b>Follow</b></button>
+								<button class="followButton"><span class="messageIcon"></span><b>Message</b></button>
+								<button class="followButton"><span class="downIcon"></span></button>
+							</div>
+								<div class="userInfo">
+										<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;</span></h2>
+									
+										<p>Works at Ocean Inc.</p>
+								
+									<p class="grey margin">Studied at Holberton School</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="notableUsersList">
+							
+							<a href="about.html"><img src="images/photo1.jpg" alt="isttt" /></a>
+							<div class="userInfoAndButtons">
+							<div class="followMessageMore">
+								<button class="followButton"><span class="followIcon"></span><b>Follow</b></button>
+								<button class="followButton"><span class="messageIcon"></span><b>Message</b></button>
+								<button class="followButton"><span class="downIcon"></span></button>
+							</div>
+								<div class="userInfo">
+										<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;</span></h2>
+									
+										<p>Works at Ocean Inc.</p>
+								
+									<p class="grey margin">Studied at Holberton School</p>
+								</div>
+							</div>
+							
+						</div>
+						
+					
+				</div>
+				
+			</article>
+
+			<aside>
+
+				<div class="blockFeed asideUsers">	<!--Trending Posts Feed block-->
+					<h3 class="grey">Trending Posts</h3>
+					<div class="post">
+						<div class="postHeader">
+							<a href="about.html"><img src="images/photo1.jpg" alt="ss" /></a>
+							<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+						</div>
+						<p>Good work there! Just making sure that the code is validated properly.</p>
+						<div class="clearFloat"></div>
+						<ul class="postSocialButtons">	<!--Piping used in css for icons-->
+  							<li><a href="#"><span class="replyIcon"></span></a></li>
+  							<li><a href="#"><span class="reTweetIcon"></span></a></li>
+  							<li><a href="#"><span class="likeIcon"></span></a></li>
+  							<li><a href="#"><span class="moreIcon"></span></a></li>
+						</ul>
+					</div>
+
+					<div class="post">	<!--div containing individual trending post -->
+						<div class="postHeader">
+							<a href="about.html"><img src="images/photo1.jpg" alt="ss" /></a>
+							<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+						</div>
+						<p>I am still making this page and now I have completed it.</p>
+						<div class="clearFloat"></div>
+						<ul class="postSocialButtons">
+  							<li><a href="#"><span class="replyIcon"></span></a></li>
+  							<li><a href="#"><span class="reTweetIcon"></span></a></li>
+  							<li><a href="#"><span class="likeIcon"></span></a></li>
+  							<li><a href="#"><span class="moreIcon"></span></a></li>
+						</ul>
+					</div>
+
+					<div class="post">
+						<div class="postHeader">
+							<a href="about.html"><img src="images/photo1.jpg" alt="ss" /></a>
+							<h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+						</div>
+						<p>I am still making this page</p>
+						<div class="clearFloat"></div>
+						<ul class="postSocialButtons">
+  							<li><a href="#"><span class="replyIcon"></span></a></li>
+  							<li><a href="#"><span class="reTweetIcon"></span></a></li>
+  							<li><a href="#"><span class="likeIcon"></span></a></li>
+  							<li><a href="#"><span class="moreIcon"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="asideGeneralBlock asideLinks"> <!--Sitemap-->
+					<ul>
+		  					<li>&#169;&nbsp;HaShare</li>
+		  					<li><a href="about.html" class="aHoverUnderline">Impossible Octopus Fitness</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Help</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Terms</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Privacy</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Advertise</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Developers</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Cookies</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Lorem</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Ipsem</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Amet</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Adipiscing</a></li>
+		  					<li><a href="#" class="aHoverUnderline">Tempus</a></li>
+					</ul>
+				</div>
+				<footer>	<!--always stays at bottom right corner -->
+				<p>This website is in beta</p>
+			</footer>
+			</aside>
+							
+		</main>
+	
+	</div>
+</div>
+   
+</body>
+</html>

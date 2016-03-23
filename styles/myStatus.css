@@ -1,0 +1,76 @@
+/*Styling file for myStatus.html*/
+
+aside {
+    flex:2.5;
+   
+
+}
+ aside h2, aside p{
+    font-size:1.1em;
+ }
+aside li>a{
+    color:#a7a7a7;
+}
+.blockFeed{
+    margin:0 auto;
+    width:98%;
+}
+.asideGeneralBlock {
+    width: auto;
+}
+
+article {
+    flex:1;
+    margin-left: 5px;
+    
+   
+}
+
+.singleProfileName {
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 5px;;
+}
+.singleProfilePic {
+    width: 100%;
+}
+
+.singleProfileAddress {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 7px 0;
+}
+
+.profileMargin {
+    margin: 10px 0;
+}
+
+@media (max-width: 992px) and (min-width:768px) {
+   .blockFeed{
+    flex:1;
+   }
+
+   .singleProfileName{
+       
+        
+        background:#f5f8fa;
+        border:none;
+       
+    }
+    .singleProfileName h2{
+        
+        font-size:2.5em;
+
+    }
+   article{
+    display:flex;
+    flex-direction: row-reverse;
+   }
+
+   .singleProfileName{
+    flex:1.5;
+    align-self:center;
+   }
+
+}

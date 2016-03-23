@@ -1,95 +1,518 @@
 <!DOCTYPE html>
-<html>
+<!-- Twitter Clone Project Using Floats
+Author: Bilal Khan & Mason Fish -->
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="reset.css" />
+  <!--Some Meta tags for SEO-->
+  <meta name="keywords" content="clone, twitter" />
+  <meta name="description" content="This is the main page for my twitter clone" />
+  <meta name="author" content="Bilal and Mason" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- All css files to be merged together for publishing in future to minimize http requests -->
+  <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles/header.css" />
+  <link rel="stylesheet" type="text/css" href="styles/article.css" />
+  <link rel="stylesheet" type="text/css" href="styles/aside.css" />
+  <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+  <link rel="stylesheet" type="text/css" href="styles/buttons.css" />
+  <link rel="stylesheet" type="text/css" href="styles/seo.css" />
+  <link rel="stylesheet" type="text/css" href="styles/mediaQueries.css" />
 
-<style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
-  .links{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    flex:1;
-   align-items: center;
-   position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    margin: auto;
-  }
-
-  body{
-    font-family: 'Lato', Verdana, Arial;
-    background-color: #ffffff;
-background-image: url("graph.png");
-background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-    background-size: auto 100%;
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-padding:15px;
-  }
-
-  .logo{
-    width:120px;
-    height:35px;
-  }
-    
-  .button, .button:visited {
-  
- 
-  padding: 11px 40px;
-  color: #fff;
-  text-decoration: none;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-  border-bottom: 1px solid rgba(0,0,0,0.25);
-  
-  cursor: pointer
-  
-  }
+  <script type="text/javascript" src="js/behavior.js"></script>
+  <script type="text/javascript" src="js/post_a_status.js"></script>
+  <script type="text/javascript" src="js/reply.js"></script>
+  <script type="text/javascript" src="js/toggle.js"></script>
+  <script type="text/javascript" src="js/load_more.js"></script>
+  <script type="text/javascript" src="js/ajax.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
+  <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
 
 
-.red.button   { 
-  background-color: #e62727; 
-  margin-top:15px !important;
-  font-size: 20px;
-}
-.red.button:hover{ 
-    background-color: #cf2525; 
-}
+  <title>Share Site!</title>
 
-.blue.button, .blue.button:visited{ 
-  background-color: #2981e4; 
-}
-
-.heading{
-  font-size: 50px;
-  font-weight: bold;
-  margin-top:15px;
-  margin-bottom:15px;
-  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-  color:#222222;
-
-}
-
-
-</style>
 </head>
 
 <body>
-  <div class="links">
-    <img class="logo" src="hollogo.png" alt="h" />
-    <h1 class="heading">Discover Open Data</h1>
-    <a class="button red" href="fatal_police_encounters.html">Fatal Police Encounters</a> 
-    <a class="button red" href="mental_illness.html">Mental Illness</a>
+              <script id="header" type="text/x-handlebars-template">
+                <div class="post">
+                   <div class="postHeader">
+                    <a href="about.html"><img src="{{image_path}}" alt="Impossible Octopus Fitness" /></a>
+                    <h2><b><a href="#" class="aHoverColorUnderline">{{name}}</a></b><span class="grey">&nbsp;{{username}}&nbsp;<span class="time">1h</span></span></h2>
+                  </div>
+                  <p>{{status}}</p>
+
+                  <div class="clearFloat"></div>
+                  <ul class="postSocialButtons">
+                    <!--Piping is used-->
+                    <li><a><span class="replyIcon" data-id="{{data_id}}"></span></a></li>
+                    <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                    <li><a href="#"><span class="likeIcon"></span></a></li>
+                    <li><a href="#"><span class="moreIcon"></span></a></li>
+                  </ul>
+
+                  <div class="replyBox">
+                    <form  method="post">
+                      <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                      <div class="flex">
+                        <label class="location">
+                          <input type="checkbox" name="location" value="" title="Include Location?"><span style="color:#222222;">Include Location</span>
+                        </label>
+                        <button class="sendButton" type="button">Reply</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </script>
+  <!-- tweet-box, hidden until tweet button is selected -->
+  <div id="screenContent" class="hideTweet">
+
+    <div id="tweetBox">
+      <a id="closeButton"><span></span></a>
+      <form  method="post">
+        <textarea class="tweetBody" placeholder="What's on your mind?"></textarea>
+        <div class="flex">
+          <label class="location"><input type="checkbox" name="location" value="" title="Include Location?"><span>Include Location</span></label>
+          <button id="sendButton" class="sendButton" type="button">Post</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="maincontainer">
+    <!--main container that contains every other body elements-->
+
+    <header>
+      <div class="paddingHeader">
+        <!--paddingHeader for defining header padding-->
+        <div class="logoAndTagline">
+          <button id="nav-button"><span class="menuIcon"></span></button>
+          <div class="logoTagline">
+            <a href="index.html"><img src="images/logo.png" alt="main" class="logo" /></a>
+
+
+            <h2 id="tagLine"><b>Share your life<em>!</em></b></h2>
+          </div>
+        </div>
+        <div class="supernav">
+          <div class="upperNav">
+            <!--UpperNav contains Logout, edit my profile, picture and searchbar-->
+
+            <ul class="pipes">
+              <!--piping is used here to add | between the li elements -->
+              <li><a href="#" class="aHoverUnderline" style="color:#0084B4">Edit my profile</a></li>
+
+              <li><a href="#" class="aHoverUnderline" style="color:#0084B4">Logout</a></li>
+            </ul>
+          </div>
+
+          <div class="lowerNav">
+            <!--lowerNav contains menu buttons such as Home, All Users-->
+            <ul>
+              <!--class "navButtonCurrentlyViewing" is used to make the lower border blue of the currently active menu button-->
+              <li><a href="index.html" class="navButton navButtonCurrentlyViewing"><span class="homeIcon"></span>Home</a></li>
+              <li><a href="myStatus.html" class="navButton"><span class="statusesIcon"></span>My Status</a></li>
+              <li><a href="allUsers.html" class="navButton"><span class="usersIcon"></span>All Users</a></li>
+              <li style="display:none;"><a href="about.html" class="navButton"><span class="usersIcon"></span>About</a></li>
+              <li>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <div class="padding">
+
+      <!--padding for main tag-->
+      <main>
+
+        <article>
+          <form method="post">
+            <button type="button" id="tweetButton"><i class="fa fa-paper-plane-o"></i>Post a Status</button>
+          </form>
+          <div class="blockFeed">
+            <!--div where the news feed is shown-->
+            <div class="post">
+              <!--div that contains the individual post-->
+              <div class="postHeader">
+                <a href="about.html"><img src="images/photo1.jpg" alt="Impossible Octopus Fitness" /></a>
+                <h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+              </div>
+              <p>Just adding more text so that the text smoothly aligns itself when the image height is exceeded by the text. I hope this much text is sufficient to do that. What if you make the text look more longer. Even longer than this, lorem ipsum dadium, noficaloy Ya it works! So it seems the text is still not under the image so i'll just add more text to it, i hope it works this time!</p>
+
+              <div class="clearFloat"></div>
+              <ul class="postSocialButtons">
+                <!--Piping is used-->
+                <li><a><span class="replyIcon" data-id="reply_1"></span></a></li>
+                <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                <li><a href="#"><span class="likeIcon"></span></a></li>
+                <li><a href="#"><span class="moreIcon"></span></a></li>
+              </ul>
+
+              <div class="replyBox">
+                <form  method="post">
+                  <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                  <div class="flex">
+                    <label class="location">
+                      <input type="checkbox" name="location" value="" title="Include Location?"><span style="color:#222222;">Include Location</span>
+                    </label>
+                    <button class="sendButton" type="button">Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="post">
+              <div class="postHeader">
+                <a href="#"><img src="images/photo3.jpg" alt="I" /></a>
+                <h2><b><a href="#" class="aHoverColorUnderline">Sarah Kane</a></b><span class="grey">&nbsp;@SarahKane&nbsp;<span class="time">1h</span></span></h2>
+              </div>
+              <p>Found amazing resources about advance CSS techniques just by googling it. Loving it!</p>
+
+              <div class="clearFloat"></div>
+              <ul class="postSocialButtons">
+                <li><a><span class="replyIcon" data-id="reply_2"></span></a></li>
+                <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                <li><a href="#"><span class="likeIcon"></span></a></li>
+                <li><a href="#"><span class="moreIcon"></span></a></li>
+              </ul>
+              <div class="replyBox">
+                <form  method="post">
+                  <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                  <div class="flex">
+                    <label class="location">
+                      <input type="checkbox" name="location" value="" title="Include Location?"><span  style="color:#222222;">Include Location</span>
+                    </label>
+                    <button class="sendButton" type="button">Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="post">
+              <div class="postHeader">
+                <a href="#"><img src="images/photo2.jpg" alt="I" /></a>
+                <h2><b><a href="#" class="aHoverColorUnderline">Chris Wayne</a></b><span class="grey">&nbsp;@ChrisWayne&nbsp;<span class="time">1h</span></span></h2>
+              </div>
+              <p>What if time is constant, and we are moving through time? Just like travelling in a car it the illusion feels like as if everything else is moving and you are stationary, what if in the same way, time was constant? Moving my head around these thoughts! Feeling like Aristotle! This gibberish is not to be taken as something funny.</p>
+
+              <div class="clearFloat"></div>
+              <ul class="postSocialButtons">
+                <li><a><span class="replyIcon" data-id="reply_3"></span></a></li>
+                <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                <li><a href="#"><span class="likeIcon"></span></a></li>
+                <li><a href="#"><span class="moreIcon"></span></a></li>
+              </ul>
+              <div class="replyBox">
+                <form  method="post">
+                  <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                  <div class="flex">
+                    <label class="location">
+                      <input type="checkbox" name="location" value="" title="Include Location?"><span  style="color:#222222;">Include Location</span>
+                    </label>
+                    <button class="sendButton" type="button">Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="post">
+              <div class="postHeader">
+                <a href="#"><img src="images/photo1.jpg" alt="Imp" /></a>
+                <h2><b><a href="about.html" class="aHoverColorUnderline">Jane K.</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+              </div>
+              <p>Watched an amazing movie! You guys should also check out too! So this movie revolves around batman vs superman. Even longer than this, lorem ipsum dadium, noficaloy Ya it works! constant, and we are moving zing resources about advance smoothly aligns itself when nd these thoughts! Feeling like Aris niques just by googling!</p>
+
+              <ul class="postSocialButtons">
+                <li><a><span class="replyIcon" data-id="reply_4"></span></a></li>
+                <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                <li><a href="#"><span class="likeIcon"></span></a></li>
+                <li><a href="#"><span class="moreIcon"></span></a></li>
+              </ul>
+              <div class="replyBox">
+                <form  method="post">
+                  <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                  <div class="flex">
+                    <label class="location">
+                      <input type="checkbox" name="location" value="" title="Include Location?"><span style="color:#222222;">Include Location</span>
+                    </label>
+                    <button class="sendButton" type="button">Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="post">
+              <div class="postHeader">
+                <a href="#"><img src="images/photo3.jpg" alt="I" /></a>
+                <h2><b><a href="#" class="aHoverColorUnderline">Sarah Kane</a></b><span class="grey">&nbsp;@SarahKane&nbsp;<span class="time">1h</span></span></h2>
+              </div>
+              <p>Found amazing resources about advance CSS techniques just by googling it. Loving it!</p>
+
+              <div class="clearFloat"></div>
+              <ul class="postSocialButtons">
+                <li><a><span class="replyIcon" data-id="reply_2"></span></a></li>
+                <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                <li><a href="#"><span class="likeIcon"></span></a></li>
+                <li><a href="#"><span class="moreIcon"></span></a></li>
+              </ul>
+              <div class="replyBox">
+                <form  method="post">
+                  <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                  <div class="flex">
+                    <label class="location">
+                      <input type="checkbox" name="location" value="" title="Include Location?"><span  style="color:#222222;">Include Location</span>
+                    </label>
+                    <button class="sendButton" type="button">Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="post">
+              <div class="postHeader">
+                <a href="#"><img src="images/photo2.jpg" alt="I" /></a>
+                <h2><b><a href="#" class="aHoverColorUnderline">Chris Wayne</a></b><span class="grey">&nbsp;@ChrisWayne&nbsp;<span class="time">1h</span></span></h2>
+              </div>
+              <p>What if time is constant, and we are moving through time? Just like travelling in a car it the illusion feels like as if everything else is moving and you are stationary, what if in the same way, time was constant? Moving my head around these thoughts! Feeling like Aristotle! This gibberish is not to be taken as something funny.</p>
+
+              <div class="clearFloat"></div>
+              <ul class="postSocialButtons">
+                <li><a><span class="replyIcon" data-id="reply_3"></span></a></li>
+                <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                <li><a href="#"><span class="likeIcon"></span></a></li>
+                <li><a href="#"><span class="moreIcon"></span></a></li>
+              </ul>
+              <div class="replyBox">
+                <form  method="post">
+                  <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                  <div class="flex">
+                    <label class="location">
+                      <input type="checkbox" name="location" value="" title="Include Location?"><span  style="color:#222222;">Include Location</span>
+                    </label>
+                    <button class="sendButton" type="button">Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="post">
+              <div class="postHeader">
+                <a href="#"><img src="images/photo1.jpg" alt="Imp" /></a>
+                <h2><b><a href="about.html" class="aHoverColorUnderline">Jane K.</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+              </div>
+              <p>Watched an amazing movie! You guys should also check out too! So this movie revolves around batman vs superman. Even longer than this, lorem ipsum dadium, noficaloy Ya it works! constant, and we are moving zing resources about advance smoothly aligns itself when nd these thoughts! Feeling like Aris niques just by googling!</p>
+
+              <ul class="postSocialButtons">
+                <li><a><span class="replyIcon" data-id="reply_4"></span></a></li>
+                <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                <li><a href="#"><span class="likeIcon"></span></a></li>
+                <li><a href="#"><span class="moreIcon"></span></a></li>
+              </ul>
+              <div class="replyBox">
+                <form  method="post">
+                  <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                  <div class="flex">
+                    <label class="location">
+                      <input type="checkbox" name="location" value="" title="Include Location?"><span style="color:#222222;">Include Location</span>
+                    </label>
+                    <button class="sendButton" type="button">Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="post">
+              <div class="postHeader">
+                <a href="#"><img src="images/photo3.jpg" alt="I" /></a>
+                <h2><b><a href="#" class="aHoverColorUnderline">Sarah Kane</a></b><span class="grey">&nbsp;@SarahKane&nbsp;<span class="time">1h</span></span></h2>
+              </div>
+              <p>Found amazing resources about advance CSS techniques just by googling it. Loving it!</p>
+
+              <div class="clearFloat"></div>
+              <ul class="postSocialButtons">
+                <li><a><span class="replyIcon" data-id="reply_2"></span></a></li>
+                <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                <li><a href="#"><span class="likeIcon"></span></a></li>
+                <li><a href="#"><span class="moreIcon"></span></a></li>
+              </ul>
+              <div class="replyBox">
+                <form  method="post">
+                  <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                  <div class="flex">
+                    <label class="location">
+                      <input type="checkbox" name="location" value="" title="Include Location?"><span  style="color:#222222;">Include Location</span>
+                    </label>
+                    <button class="sendButton" type="button">Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="post">
+              <div class="postHeader">
+                <a href="#"><img src="images/photo2.jpg" alt="I" /></a>
+                <h2><b><a href="#" class="aHoverColorUnderline">Chris Wayne</a></b><span class="grey">&nbsp;@ChrisWayne&nbsp;<span class="time">1h</span></span></h2>
+              </div>
+              <p>What if time is constant, and we are moving through time? Just like travelling in a car it the illusion feels like as if everything else is moving and you are stationary, what if in the same way, time was constant? Moving my head around these thoughts! Feeling like Aristotle! This gibberish is not to be taken as something funny.</p>
+
+              <div class="clearFloat"></div>
+              <ul class="postSocialButtons">
+                <li><a><span class="replyIcon" data-id="reply_3"></span></a></li>
+                <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                <li><a href="#"><span class="likeIcon"></span></a></li>
+                <li><a href="#"><span class="moreIcon"></span></a></li>
+              </ul>
+              <div class="replyBox">
+                <form  method="post">
+                  <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                  <div class="flex">
+                    <label class="location">
+                      <input type="checkbox" name="location" value="" title="Include Location?"><span  style="color:#222222;">Include Location</span>
+                    </label>
+                    <button class="sendButton" type="button">Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="post">
+              <div class="postHeader">
+                <a href="#"><img src="images/photo1.jpg" alt="Imp" /></a>
+                <h2><b><a href="about.html" class="aHoverColorUnderline">Jane K.</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;<span class="time">1h</span></span></h2>
+              </div>
+              <p>Watched an amazing movie! You guys should also check out too! So this movie revolves around batman vs superman. Even longer than this, lorem ipsum dadium, noficaloy Ya it works! constant, and we are moving zing resources about advance smoothly aligns itself when nd these thoughts! Feeling like Aris niques just by googling!</p>
+
+              <ul class="postSocialButtons">
+                <li><a><span class="replyIcon" data-id="reply_4"></span></a></li>
+                <li><a href="#"><span class="reTweetIcon"></span></a></li>
+                <li><a href="#"><span class="likeIcon"></span></a></li>
+                <li><a href="#"><span class="moreIcon"></span></a></li>
+              </ul>
+              <div class="replyBox">
+                <form  method="post">
+                  <textarea class="tweetBody" placeholder="Write your reply here"></textarea>
+                  <div class="flex">
+                    <label class="location">
+                      <input type="checkbox" name="location" value="" title="Include Location?"><span style="color:#222222;">Include Location</span>
+                    </label>
+                    <button class="sendButton" type="button">Reply</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div id="moreHere"></div>
+
+
+          </div>
+
+          <form method="post">
+            <button type="button" id="loadMore"><i class="fa fa-th-list"></i>See more statuses!</button>
+          </form>
+        </article>
+
+
+        <aside>
+          <div class="asideGeneralBlock asideUsers">
+            <!--Aside Block-->
+
+            <div class="notableUsersHeading">
+              <!--Heading for first block of aside-->
+              <p class="grey">Who to follow</p>
+              <!--Grey class is for grey text color-->
+              <ul>
+                <li><a href="#" class="aHoverUnderline" style="color:#0084B4">Refresh</a></li>
+                <li>&nbsp;-&nbsp;</li>
+                <li><a href="#" class="aHoverUnderline" style="color:#0084B4">View all</a></li>
+              </ul>
+            </div>
+            <div class="notableUsersList">
+              <!--Lists related users that the user could knw -->
+              <a href="about.html"><img src="images/photo1.jpg" alt="Impossible Octopus Fitness" /></a>
+
+              <h2><b><a href="#" class="aHoverColorUnderline">David Eicher</a></b><span class="grey">&nbsp;@DavidEicher&nbsp;</span></h2>
+
+              <p>It's <span id="weather"></span> today!</p>
+
+              <button class="followButton" id=updateWeather><span class="followIcon"></span><b>Update Weather</b></button>
+
+
+            </div>
+
+            <div class="notableUsersList">
+              <a href="about.html"><img src="images/photo2.jpg" alt="Impossible Octopus Fitness" /></a>
+
+              <h2><b><a href="#" class="aHoverColorUnderline">Chris Wayne</a></b><span class="grey">&nbsp;@ChrisWayne&nbsp;</span></h2>
+
+              <p>Fitness is cool</p>
+
+              <button class="followButton"><span class="followIcon"></span><b>Follow</b></button>
+
+
+            </div>
+
+            <div class="notableUsersList">
+              <a href="about.html"><img src="images/photo3.jpg" alt="Impossible Octopus Fitness" /></a>
+
+              <h2><b><a href="#" class="aHoverColorUnderline">Sarah Kane</a></b><span  class="grey">&nbsp;@SarahKane&nbsp;</span></h2>
+
+              <p>I am impossible</p>
+
+              <button class="followButton"><span class="followIcon"></span><b>Follow</b></button>
+
+
+            </div>
+            <p><a href="#" class="aHoverUnderline" style="color:#0084B4;">Find Friends</a></p>
+
+          </div>
+
+          <div class="asideGeneralBlock asideLinks">
+            <!--Sitemap-->
+            <ul>
+              <li>&#169;&nbsp;HaShare</li>
+              <li><a href="about.html" class="aHoverUnderline">Impossible Octopus Fitness</a></li>
+              <li><a href="#" class="aHoverUnderline">Help</a></li>
+              <li><a href="#" class="aHoverUnderline">Terms</a></li>
+              <li><a href="#" class="aHoverUnderline">Privacy</a></li>
+              <li><a href="#" class="aHoverUnderline">Advertise</a></li>
+              <li><a href="#" class="aHoverUnderline">Developers</a></li>
+              <li><a href="#" class="aHoverUnderline">Cookies</a></li>
+              <li><a href="#" class="aHoverUnderline">Lorem</a></li>
+              <li><a href="#" class="aHoverUnderline">Ipsem</a></li>
+              <li><a href="#" class="aHoverUnderline">Amet</a></li>
+              <li><a href="#" class="aHoverUnderline">Adipiscing</a></li>
+              <li><a href="#" class="aHoverUnderline">Tempus</a></li>
+            </ul>
+          </div>
+
+          <footer>
+            <!--always stays at bottom right corner -->
+            <p>This website is in beta</p>
+          </footer>
+        </aside>
+
+
+
+      </main>
+
+    </div>
   </div>
 </body>
+
+</html>

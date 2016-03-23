@@ -1,0 +1,70 @@
+/*CSS file for general styles that are not specific*/
+
+body {
+    background: #f5f8fa;
+    font-family: 'Open Sans', Verdana, Arial;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1,
+h2,
+p {
+    color: #222222;
+}
+
+#maincontainer {
+    width: 992px;
+    border: 1px solid #dedede;
+    margin: auto;
+    font-family: 'Open Sans', Verdana, Arial;
+    font-size: 13px;
+}
+
+.grey {
+    color: #bbbbbb;
+}
+
+b {
+    font-weight: bold;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+.clearLeft {
+    clear: left;
+}
+
+.clearRight {
+    clear: right;
+}
+
+.aHoverColorUnderline:hover {
+    text-decoration: underline;
+    color: #0084B4;
+}
+
+.aHoverUnderline:hover {
+    text-decoration: underline;
+}
+
+
+/*
+main{
+	margin-top:10px;
+	border:1px solid #dedede;
+}
+*/
+
+.padding {
+    padding: 3px 10px 9px 10px;
+}

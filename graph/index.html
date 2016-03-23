@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="reset.css" />
+
+<style>
+
+  .links{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1;
+   align-items: center;
+   position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+  }
+
+  body{
+    font-family: 'Lato', Verdana, Arial;
+    background-color: #ffffff;
+background-image: url("graph.png");
+background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: auto 100%;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+padding:15px;
+  }
+
+  .logo{
+    width:120px;
+    height:35px;
+  }
+    
+  .button, .button:visited {
+  
+ 
+  padding: 11px 40px;
+  color: #fff;
+  text-decoration: none;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+  
+  cursor: pointer
+  
+  }
+
+
+.red.button   { 
+  background-color: #e62727; 
+  margin-top:15px !important;
+  font-size: 20px;
+}
+.red.button:hover{ 
+    background-color: #cf2525; 
+}
+
+.blue.button, .blue.button:visited{ 
+  background-color: #2981e4; 
+}
+
+.heading{
+  font-size: 50px;
+  font-weight: bold;
+  margin-top:15px;
+  margin-bottom:15px;
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+  color:#222222;
+
+}
+
+
+</style>
+</head>
+
+<body>
+  <div class="links">
+    <img class="logo" src="hollogo.png" alt="h" />
+    <h1 class="heading">Discover Open Data</h1>
+    <a class="button red" href="fatal_police_encounters.html">Fatal Police Encounters</a> 
+    <a class="button red" href="mental_illness.html">Mental Illness</a>
+  </div>
+</body>

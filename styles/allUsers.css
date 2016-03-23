@@ -1,0 +1,120 @@
+/*Styling file for allUser.html*/
+.notableUsersList img{
+	float:none;
+}
+
+.notableUsersList{
+	display:flex;
+	flex-direction: row;
+}
+
+.userInfoAndButtons{
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width:100%;
+}
+
+.followMessageMore{
+	
+}
+article{
+	
+	
+	overflow:hidden;
+}
+
+.AllUsersList {
+	width:97%;
+	
+	background:#ffffff;
+	
+	border-radius:5px;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-bottom:14px;
+
+}
+
+.asideGeneralBlock{
+	
+	
+}
+
+.asideLinks{
+	margin-top:10px;
+}
+
+.postSocialButtons li{
+	margin-right:50px;
+
+}
+
+.postSocialButtons a{
+	color:#a7a7a7;
+}
+.messageIcon::before{
+	font-family:FontAwesome;
+	content: "\f0e0";
+	color:#55acee;
+    margin-right:3px;
+	
+}
+
+.downIcon::before{
+	font-family:FontAwesome;
+	content: "\f0d7";
+	color:#55acee;
+    
+	
+}
+
+
+
+
+.followButton{
+	margin-top: 0;
+}
+
+.notableUsersList{
+	border-bottom: 1px solid #dedede;
+	padding: 10px;
+	margin:0;
+}
+
+.notableUsersList img {
+	width:100px;
+}
+
+.notableUsersHeading{
+	border-bottom: 1px solid #dedede;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+.followMessageMore{
+	
+}
+
+.blockFeed h3{
+	font-size:1.2em;
+	padding:13px 10px 10px 10px;
+	border-bottom: 1px solid #dedede;
+}
+
+@media (max-width: 600px){
+	.userInfoAndButtons{
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+	}
+
+}
+
+
+@media (max-width: 992px) and (min-width:768px){
+.asideLinks{
+	margin-top:0;
+}
+}
